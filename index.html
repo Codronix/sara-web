@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="sara, SARA, Sorsogon Animal Rescue and Adoption">
+    
     <!--Bootstrap-->
     <link rel="stylesheet" href="styles/bootstrap/css/bootstrap.min.css">
-    <script src="styles/bootstrap/js/bootstrap.min.js" defer></script>
-
+    <link rel="stylesheet" href="assets/icons/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="styles/custom-style.css">
+
+    <!-- Scripts -->
+    <script src="styles/bootstrap/js/bootstrap.min.js" defer></script>
+    <script src="js/libraries/jquery.min.js" defer></script>
+    <script src="js/app.js" defer></script>
+
     <title>S.A.R.A</title>
 </head>
-    <body>
-        <div class="image-background">
-            <nav class="navbar navbar-expand-lg bg-body-transparent">
+    <body class="with-bg">
+        <div class="content">
+            <nav class="navbar navbar-expand-lg bg-body-white bg-light">
                 <div class="container-fluid">
                     <!-- <span class="navbar-brand mb-0 h1">S.A.R.A.</span> -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,26 +27,56 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav custom-header-navbar">
-                            <a class="nav-link" aria-current="page" href="#">Mission & Vission</a>
+                            <a class="nav-link" href="#">Mission & Vission</a>
                             <a class="nav-link" href="#">Lend a Paw</a>
-                            <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
                         </div>
                     </div>
                 </div>
             </nav>
             
-            <div class="col-md-12 d-flex justify-content-center">
-                <img class="img-logo" src="assets/img/SARA-Logo.png" alt="">
+            <div class="text-center text-white">
+                <div class="col-md-12 d-flex justify-content-center">
+                    <img class="img-logo" src="assets/img/SARA-Logo.png" alt="">
+                </div>
+    
+                <h1>Sorsogon Animal <br> Rescue and Adoption</h1>
+                <h4>"From lost and homeless to loved and cherished. <br>
+                    From abandoned to adored."</h4>
+                <p class="lead">
+                    <button id="btnAbout" class="btn px-4 fw-bold text-white" style="background-color: #0001fc;">ABOUT</button>
+                </p>
             </div>
 
-            <h1>Sorsogon Animal <br> Rescue and Adoption</h1>
-            <h4>"From lost and homeless to loved and cherished. <br>
-                From abandoned to adored."</h4>
-            <p class="lead">
-                <button class="btn px-4 fw-bold text-white" style="background-color: #0001fc;">ABOUT</button>
-            </p>
+            <div id="mission_vission" class="bg-white text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 mt-5">
+                            <i style="font-size: 8rem;" class="fa-solid fa-shield-dog"></i>
+                            <br> <br>
+                            <h2 class="fw-normal">Mission</h2>
+                            <p class="text-start">
+                                To protect animals ,promote their well-being, and help them find their forever home.
+                                Preventing cruelty, promoting compassion to animals, advocating for pet related issues 
+                                and to educate the public about responsible pet ownership and animal welfare law. 
+                            </p>
+                        </div>
+                        <div class="col-lg-6 mt-5">
+                            <i style="font-size: 8rem;" class="fa-solid fa-shield-cat"></i>
+                            <br> <br>
+                            <h2 class="fw-normal">Vision</h2>
+                            <p class="text-start">
+                                To achieve through efforts the reduction of numbers of stray dogs and cats, cruelty and neglected. 
+                                Also, to prevent rabies free and promote responsible pet owners
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br> <br> <br> <br>
+            </div>
         </div>
-        
-        
+        <!-- Modals -->
+        <div id="modal-section">
+
+        </div>
     </body>
 </html>
